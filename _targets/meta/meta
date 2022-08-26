@@ -1,4 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+consulta_osm|function|dddd45d415bfa0b7|||||||||||||||
 descargar_cantones|function|899ea758b328065f|||||||||||||||
 descargar_distritos|function|899ea758b328065f|||||||||||||||
 descargar_formuario|stem|76853891bae08e4b|598e491a57451eb8|e8fe88fdebcd16e8|-1121578161|data-raw/formulario.csv|t19230.6975073056s|41200f7f0df0ebd3|96|file|local|vector|||2.566||
