@@ -1,3 +1,11 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-data|stem|e8d6e66b7363abfd|43fae4011a0626f4|136bf5e07fbd9b1c|1588979285||t19229.7766283696s|d07e2e962de596ec|1750|rds|local|vector|||0.012||
-model|stem|14379f1ee2ae8389|ae83bc723fe2997c|3de4d60d3784fc8d|1816327236||t19229.7766286267s|4bab66ba4bee4440|108|rds|local|vector|||0.004||
+descargar_cantones|function|899ea758b328065f|||||||||||||||
+descargar_distritos|function|899ea758b328065f|||||||||||||||
+descargar_formuario|stem|2f6cc1de88bbe401|f91dfb4b720eebfd|f1d39118f9351f74|-1121578161|data-raw/formulario.qs|t19230.6205802469s|032c598c5079204f|286|file|local|vector|||1.817||
+descargar_formulario|function|30cb36092cc1ebb2|||||||||||||||
+descargar_mapa|function|3308c13c04354444|||||||||||||||
+descargar_provincias|function|899ea758b328065f|||||||||||||||
+get_provincias|function|e322fc56deba0560|||||||||||||||
+mapa_cantones|stem|6f1a1b517c3b8322|07c64d9a03a36096|df25ff2a3abfffd1|-882776020|data/cantones.qs|t19230.5589322815s|64c8450081e75eb3|201727|file|local|vector|||19.29||
+mapa_distritos|stem|f9a9987b2e2c8bf3|78cf2a1e202db7f0|0444697185962795|56018297|data/distritos.qs|t19230.5590906434s|47da17f5e45769cc|366891|file|local|vector|||32.97||
+mapa_provincias|stem|458bed563059b2cc|69625a1459aee2c9|68883878ce2f965c|262725584|data/provincias.qs|t19230.5588507774s|8d3be876d8df7da8|108405|file|local|vector|||12.249||
