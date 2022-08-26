@@ -20,6 +20,8 @@ gargle_oauth_cache()
 drive_auth()
 ```
 
+ahora en el archivo `_targets.R` edita el email en la configuración de google drive.
+
 ### Ejecutar el proceso
 
 

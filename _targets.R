@@ -10,7 +10,7 @@ library(future.callr)
 
 options(
   gargle_oauth_cache = ".secrets",
-  gargle_oauth_email = "dev.aguero@gmail.com"
+  gargle_oauth_email = "dev.aguero@gmail.com" # cambiar por tu email
 )
 
 # configuracion future (procesamiento en paralelo) ------------------------
@@ -21,7 +21,7 @@ plan(callr)
 # configuracion targers ---------------------------------------------------
 
 tar_option_set(
-  packages = c("tibble","sf","httr","rmapshaper"),
+  packages = c("tibble","sf","httr","readr","rmapshaper","qs","googledrive"),
   format = "qs" 
 )
 
@@ -50,7 +50,7 @@ list(
     name = "descargar_formuario",
     command = descargar_formulario(
       name = "ejemplo_formulario_datos",
-      path = "data-raw/formulario.qs"),
+      path = "data-raw/formulario.csv"),
     format = "file"
   )
 )
