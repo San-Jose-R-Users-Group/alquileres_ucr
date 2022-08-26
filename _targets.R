@@ -47,10 +47,18 @@ list(
     command = descargar_distritos(path = "data/distritos.qs"),
     format = "file"),
   tar_target(
-    name = "descargar_formuario",
-    command = descargar_formulario(
+    name = "descargar_formulario",
+    command = descargar_form(
       name = "ejemplo_formulario_datos",
       path = "data-raw/formulario.csv"),
-    format = "file"
+    format = "file",
+    cue = tarchetypes::tar_cue_force({
+      modified_time <- suppressMessages(
+        googledrive::drive_get("ejemplo_formulario_datos")[["drive_resource"]][[1]]$modifiedTime
+      )
+      modified_time <- lubridate::ymd_hms(modified_time)
+      last_run <- tar_meta("descargar_formulario")[["time"]]
+      modified_time > last_run
+    })
   )
 )

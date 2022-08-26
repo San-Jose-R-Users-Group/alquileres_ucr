@@ -1,7 +1,7 @@
 
 # realizar consultas al api de Open Street Map (como google maps pero gratis)
 # bbox: vector numerico https://wiki.openstreetmap.org/wiki/Bounding_Box
-# key, value : texto # consultar https://wiki.openstreetmap.org/wiki/Map_features
+# key, value : texto  consultar https://wiki.openstreetmap.org/wiki/Map_features
 #
 consulta_osm <- function(bbox = NA, key = NA, value = NA, key_exact = TRUE) {
   
