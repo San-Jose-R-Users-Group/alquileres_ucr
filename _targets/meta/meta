@@ -1,8 +1,8 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 descargar_cantones|function|899ea758b328065f|||||||||||||||
 descargar_distritos|function|899ea758b328065f|||||||||||||||
-descargar_formuario|stem|2f6cc1de88bbe401|f91dfb4b720eebfd|f1d39118f9351f74|-1121578161|data-raw/formulario.qs|t19230.6205802469s|032c598c5079204f|286|file|local|vector|||1.817||
-descargar_formulario|function|30cb36092cc1ebb2|||||||||||||||
+descargar_formuario|stem|76853891bae08e4b|598e491a57451eb8|e8fe88fdebcd16e8|-1121578161|data-raw/formulario.csv|t19230.6975073056s|41200f7f0df0ebd3|96|file|local|vector|||2.566||
+descargar_formulario|function|1a1fd212dcc8d219|||||||||||||||
 descargar_mapa|function|3308c13c04354444|||||||||||||||
 descargar_provincias|function|899ea758b328065f|||||||||||||||
 get_provincias|function|e322fc56deba0560|||||||||||||||
