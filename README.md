@@ -20,5 +20,13 @@ gargle_oauth_cache()
 drive_auth()
 ```
 
+### Ejecutar el proceso
+
+
+```
+targets::tar_make()
+```
+
+
 
 
