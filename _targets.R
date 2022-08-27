@@ -57,8 +57,13 @@ list(
         googledrive::drive_get("ejemplo_formulario_datos")[["drive_resource"]][[1]]$modifiedTime
       )
       modified_time <- lubridate::ymd_hms(modified_time)
-      last_run <- tar_meta("descargar_formulario")[["time"]]
-      modified_time > last_run
+      last_run <- try(tar_meta("descargar_formulario")[["time"]], silent = T)
+      if(inherits(last_run,"try-error")){
+        FALSE
+      }else{
+        modified_time > last_run
+      }
+      
     })
   )
 )
