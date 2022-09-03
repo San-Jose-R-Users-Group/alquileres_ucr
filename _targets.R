@@ -2,6 +2,7 @@
 # dependencias ------------------------------------------------------------
 
 library(targets)
+library(googledrive)
 library(future)
 library(future.callr)
 
