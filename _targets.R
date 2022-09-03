@@ -50,12 +50,12 @@ list(
   tar_target(
     name = "descargar_formulario",
     command = descargar_form(
-      name = "ejemplo_formulario_datos",
+      name = as_id("1w3_wxfWFc1ZFyLHAx5KQ4ukQy2EVorXjQ8J0uWvTmVQ"),
       path = "data-raw/formulario.csv"),
     format = "file",
     cue = tarchetypes::tar_cue_force({
       modified_time <- suppressMessages(
-        googledrive::drive_get("ejemplo_formulario_datos")[["drive_resource"]][[1]]$modifiedTime
+        googledrive::drive_get(as_id("1w3_wxfWFc1ZFyLHAx5KQ4ukQy2EVorXjQ8J0uWvTmVQ"))[["drive_resource"]][[1]]$modifiedTime
       )
       modified_time <- lubridate::ymd_hms(modified_time)
       last_run <- try(tar_meta("descargar_formulario")[["time"]], silent = T)
